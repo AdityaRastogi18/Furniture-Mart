@@ -1,67 +1,183 @@
 .navbar-brand a {
-    display: flex;
-    color: #000000 !important;
-    font-family: "Acme", sans-serif;
+  display: flex;
+  color: #000000 !important;
+  font-family: "Acme", sans-serif;
+}
+.collection {
+  background-color: black;
+  color: white;
+  /* padding-left: 2rem; */
+  /* border-radius: ; */
+}
+
+.collection-img {
+  padding-right: 0 !important;
+}
+
+nav {
+  background-color: whitesmoke !important;
+}
+.c1 {
+  display: flex;
+  flex-grow: 2;
+}
+.c2 {
+  display: flex;
+  flex: 0.5;
+}
+svg {
+  height: 20px;
+  width: 25px;
+}
+nav a:link {
+  text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000000;
+  color: transparent;
+  width: 0%;
+  content: "";
+  height: 2px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.hero-img {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("/hero.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .h-1 {
+  position: absolute;
+} */
+.btn {
+  width: 120px;
+}
+
+@media screen and (min-width: 580px) {
+  .container-fluid h1 {
+    /* position: absolute !important; */
+    /* width: 75vw; */
+    font-weight: 650 !important;
   }
-  
+  /* .c1 {
+    flex-direction: row;
+  } */
+  .col {
+    height: 20rem !important;
+    width: 20rem !important;
+  }
+  .collection-img img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .navbar-brand {
+    margin-left: 1.5rem;
+    padding: 0 !important;
+  }
+  .container-fluid {
+    width: auto;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    color: black;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .caption {
+    width: 80vw;
+    margin-top: 2vh;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar {
+    padding-left: 20px !important;
+    padding-right: 80px !important;
+    position: sticky;
+    top: 0;
+  }
   .c1 {
-    display: flex;
-    flex-grow: 2;
+    justify-content: space-evenly;
   }
-  .c2 {
-    display: flex;
-    flex: 0.5;
+  .row {
+    flex-direction: row !important;
+    justify-content: center;
   }
-  svg {
-    height: 20px;
-    width: 25px;
+  .col {
+    height: 15rem !important;
+    width: 15rem !important;
   }
-  nav a:link {
-    text-decoration: none;
+  .collection {
+    padding-left: 2rem;
   }
-  
+  .collection h2 {
+    font-size: 2.5rem;
+  }
+  .collection h6 {
+    font-size: 0.8rem;
+  }
+  .collection-img img {
+    height: 100% !important;
+    width: 100% !important;
+  }
   .navbar .navbar-nav .nav-link {
-    position: relative;
-    transition: all 0.5s;
+    padding: 1em 0.7em;
   }
-  .navbar .navbar-nav .nav-link:hover {
-    color: #000000;
+  .navbar {
+    padding: 0;
   }
-  .navbar .navbar-nav .nav-link::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: #000000;
-    color: transparent;
-    width: 0%;
-    content: "";
-    height: 2px;
-    transition: all 0.5s;
+  .navbar .navbar-brand {
+    padding: 0 0.7em;
   }
-  .navbar .navbar-nav .nav-link:hover::after {
-    width: 100%;
+  .container-fluid h1 {
+    /* position: absolute !important; */
+    /* width: 75vw; */
+    font-size: 2.75rem;
+    font-weight: 500 !important;
   }
-  
-  @media screen and (min-width: 960px) {
-    .navbar {
-      padding-left: 20px !important;
-      padding-right: 80px !important;
-      position: sticky;
-      top: 0;
-    }
-    .c1 {
-      justify-content: space-evenly;
-    }
-    .navbar .navbar-nav .nav-link {
-      padding: 1em 0.7em;
-    }
-    .navbar {
-      padding: 0;
-    }
-    .navbar .navbar-brand {
-      padding: 0 0.7em;
-    }
+  .navbar-brand {
+    margin-left: 4rem;
+    padding: 0 !important;
   }
-  
+  .container-fluid {
+    width: auto;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    color: black;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .caption {
+    width: 45vw;
+    margin-top: 2vh;
+    font-size: 1.25rem;
+  }
+}
+
+.container-fluid h1 {
+  /* position: absolute !important; */
+  /* width: 75vw; */
+  font-size: 2.75rem;
+  font-weight: 650 !important;
+}
